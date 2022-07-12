@@ -13,11 +13,13 @@ body {
     text-align: center;
   }
   
+  /*styling the form selector */
   form {
     width: 60vw;
       max-width: 500px;
       min-width: 300px;
       margin: 0 auto;
+      padding: 2em;
   }
 
   label {
@@ -30,5 +32,51 @@ body {
   select {
       margin: 10px 0 0 0;
       width: 100%;
+      min-height: 1.5rem;
   }
+
+
+  /* styling the radio and checkbox with class inline and unset*/
+  .inline {
+    width: unset;
+    margin: 0px;
+    margin-right: 0.5em;
+    vertical-align: middle; /* this sets the elements inline with the text*/
+
   
+  }
+
+  /*styling an attribute selector input with type value submit*/
+  input[type="submit"]{
+    display: block;
+    width: 50%;
+    
+    margin: 20px auto;
+    height: 2em;
+    font-size: 1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    cursor: pointer;
+    
+  }
+
+  /* submit hover*/
+
+  input[type="submit"]:hover {
+    background-color: aquamarine;
+    transition: 2s;
+  }
+
+  /* terms and condition link */
+  a {
+    color: #dfdfe2;
+  }
+
+  a:visited{
+    color: purple;
+  }
+
+  a:active{
+    color: blue;
+
+  }
